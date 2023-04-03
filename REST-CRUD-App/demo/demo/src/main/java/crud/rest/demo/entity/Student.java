@@ -33,7 +33,7 @@ public class Student {
 	@Column(name = "gpa", length = 80)
 	private double gpa;
 	
-	@OneToOne(cascade=CascadeType.PERSIST)
+	@OneToOne()
 	@JoinColumn(name = "degree_id")
 	private Degree degree;
 	
